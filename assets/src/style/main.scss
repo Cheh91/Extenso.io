@@ -1,0 +1,205 @@
+
+
+@import "utils/normalize";
+@import "utils/variables";
+@import "utils/icomoon";
+@import "fonts";
+
+
+@import "vendor/ion.rangeSlider";
+
+
+@import "libs/slick";
+
+
+
+@import "common/header";
+@import "common/footer";
+@import "common/base";
+
+
+
+.top{
+    position: relative;
+    &:before{
+        position: absolute;
+        content: url(../img/type-bg.png);
+        top: -238px;
+        right: 0;
+        z-index: -20;
+    }
+    &__item{
+        margin-top: 122px;
+        &-title{
+            font-size: 72px;
+            line-height: 82px;
+            font-weight: 700;
+            max-width: 660px;
+            width: 100%;
+        }
+        &-text{
+            font-size: 24px;
+            line-height: 36px;
+            max-width: 515px;
+            width: 100%;
+            margin-top: 10px;
+        }
+        &-btn{
+            display: flex;
+            align-items: center;
+            margin-top: 35px;
+            position: relative;
+            width: 146px;
+            cursor: pointer;
+            a{
+                font-size: 16px;
+                line-height: 27px;
+                color: #019BE0;
+            }
+            img{
+                margin-left: 10px;
+                // display: inline;
+                position: relative;
+                // &:before{
+                //     position: absolute;
+                //     content: "dfgdf";
+                //     width: 26px;
+                //     height: 26px;
+                //     border: 1px solid #fff;
+                //     border-radius: 50%;
+                // }
+            }
+            span{
+                width: 26px;
+                height: 26px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                display: inline;
+                margin-left: -17px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transition: all .4s;
+            }
+            &:hover{
+                span{
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    border: 1px solid #019BE0;
+                    top: -13px;
+                    right: -13px;
+                   
+
+                }
+            }
+            &.content{
+                width: 155px;
+            }
+        }
+    } 
+}
+
+
+.social-networks{
+    transform: rotate(-90deg);
+    position: fixed;
+    left: -40px;
+    top: 50%;
+    a{
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 300;
+        margin-right: 25px;
+    }
+}
+
+
+.phrase-one{
+    margin-top: 440px;
+    margin-bottom: 85px;
+}
+
+.phrase-two{
+    margin-top: 200px;
+}
+
+.phrase-three{
+    margin-top: 150px;
+}
+
+
+.info{
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        &-title{
+            font-size: 40px;
+            line-height: 46px;
+            font-weight: 700;
+            max-width: 477px;
+            width: 100%;
+        }
+        &-text{
+            max-width: 471px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 27px;
+            p{
+                margin-bottom: 35px;
+            }
+        }
+    }
+}
+
+
+.content{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 90px;
+        &.second{
+            justify-content: center;
+        }
+        &.third{
+            justify-content: flex-end;
+        }
+    }
+    &__item{
+        width: 210px;
+        &-title{
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #fff;
+        }
+        &-sub-title{
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 300;
+            color: #646482;
+            margin-top: 5px;
+        }
+        &-text{
+            font-size: 12px;
+            line-height: 20px;
+            color: #fff;
+            margin-top: 15px;
+        }
+        &-btn{
+            width: 154px;
+            margin-top: 15px;
+        }
+        &.second{
+            margin-left: 35px;
+        }
+        &.third{
+            margin-right: 100px;
+        }
+    }
+}
+
+
+
+

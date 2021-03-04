@@ -1,0 +1,47 @@
+.header{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        padding-top: 25px; 
+    }
+    &__contact{
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        // color: #fff;
+        margin-left: auto;
+        margin-bottom: 10px;
+        &-number{
+            margin-right: 40px;
+        }
+        &-mail{
+            margin-right: 40px;
+        }
+    }
+    &__language{
+        display: flex;
+        margin-bottom: 10px;
+        &-item{
+            width: 36px;
+            height: 36px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            a{
+                color: #646482;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 12px;
+            }
+            &.active{
+                border-color: #fff;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
