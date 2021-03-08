@@ -2,136 +2,58 @@
 
 
 jQuery(document).ready(function () {
-  initDropdown();
-  openHeaderMenu();
-  initSlider();
-  searchRange();
-  girlsOnline();
-  rangeSlider();
-  openSearchMenu();
+
+  languageHeader();
+  scrollFunction();
+  
 
 
 });
 
-function initDropdown() {
-  $(".drop-btn").click(function (e) {
-    e.preventDefault();
-    // $(this).closest(".drop-box").toggleClass("active");
-    // $(this).closest(".drop-box").find(".drop-btn").toggleClass("active");
-
-
-    let alldropBox = $(".drop-box");
-    let currentDropBox = $(this).closest(".drop-box");
-
-    if(currentDropBox.hasClass("active")){
-      currentDropBox.removeClass("active");
-    } else {
-      alldropBox.removeClass("active");
-      currentDropBox.addClass("active");
-    }
-    
-  })
-
-  $("body").click(function (e){
-    let block = $(".drop-box");
-
-    if(block.has(e.target).length == 0){
-      block.removeClass("active");
-    }
-  })
-}
-
-
-function openHeaderMenu() {
-  $(".header__btn-open").click(function () {
-    $(".header__btn-open span").toggleClass("active");
-    $(".header__nav").toggleClass("open");
-  })
-}
-
-function initSlider() {
-  $('.profile__slider').slick({
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    variableWidth: true,
-    swipeToSlide: true,
-    autoplay: true,
-    autoplaySpeed: 3000
-  })
-}
-
-
-function openSearchMenu(){
-  $(".search-btn").click(function(){
-    $(".search__block").addClass("active");
-    $(".modal").addClass("active");
-    $("body").css("overflow-y", "hidden");
-  })
-
-  $(".search__top-btn").click(function(){
-    $(".search__block").removeClass("active");
-    $(".modal").removeClass("active");
-    $("body").css("overflow-y", "auto");
-  })
-}
-
-
-function searchRange() {
-  $(".search__range").ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 1000,
-    from: 200,
-    to: 500,
-    grid: true
-  })
-}
-
-function girlsOnline() {
-  $(".videochat__online-wrap").slick({
-    prevArrow: '<button type="button" class="slick-prev"></button>',
-    nextArrow: '<button type="button" class="slick-next"></button>',
-    slidesToShow: 4, 
-    rows: 2,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        }
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 890,
-        settings: {
-          slidesToShow: 10,
-          rows: 1,
-          variableWidth: true,
-          swipeToSlide: true
-        }
-      }
-    ]
-  })
-}
-
-function rangeSlider() {
-  $(".js-range-slider").ionRangeSlider({
-    
-    min: 0,
-    max: 1000,
-    from: 200,
-    to: 800,
-   
+function languageHeader(){
+  $(".header__language-item").on("click", function(){
+    $(".header__language-item").removeClass("active");
+    $(this).addClass("active");
   });
 }
+
+function scrollFunction() {
+  // $(window).resize(function () {
+    // if ($(window).width() >= 1440) {
+      $(document).on("scroll", function () {
+        $(".phrase-one").css("left", Math.max(340 - 1 * window.scrollY) + "px");
+        $(".phrase-two").css("left", Math.max(1500 - 1 * window.scrollY) + "px");
+        $(".phrase-three").css("left", Math.max(3600 - 1 * window.scrollY) + "px");
+        $(".phrase-four").css("left", Math.max(5400 - 1 * window.scrollY) + "px");
+        $(".phrase-five").css("left", Math.max(6500 - 1 * window.scrollY) + "px");
+        $(".clients__block").css("right", Math.max(6700 - 1 * window.scrollY) + "px");
+      })
+    // } else if ($(window).width() < 1440) {
+    //   $(document).on("scroll", function () {
+    //     $(".phrase-one").css("left", Math.max(150 - 0.5 * window.scrollY) + "px");
+    //     $(".phrase-two").css("left", Math.max(800 - 0.5 * window.scrollY) + "px");
+    //     $(".phrase-three").css("left", Math.max(2000 - 0.7 * window.scrollY) + "px");
+    //     $(".phrase-four").css("left", Math.max(3300 - 0.7 * window.scrollY) + "px");
+    //     $(".phrase-five").css("left", Math.max(6200 - 1 * window.scrollY) + "px");
+    //     $(".clients__block").css("right", Math.max(6300 - 1 * window.scrollY) + "px");
+    //   })
+    // } else if ($(window).width() < 768) {
+      // $(document).on("scroll", function () {
+      //   $(".phrase-one").css("left", Math.max(50 - 0.7 * window.scrollY) + "px");
+      //   $(".phrase-two").css("left", Math.max(550 - 0.5 * window.scrollY) + "px");
+      //   $(".phrase-three").css("left", Math.max(2200 - 0.7 * window.scrollY) + "px");
+      //   $(".phrase-four").css("left", Math.max(4700 - 0.9 * window.scrollY) + "px");
+      //   $(".phrase-five").css("left", Math.max(8500 - 1.2 * window.scrollY) + "px");
+      //   $(".clients__block").css("right", Math.max(8300 - 1.2 * window.scrollY) + "px");
+      // })
+    // }
+  // })
+// })
+}
+
+
+
+
 
 
 

@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 
 
@@ -29,7 +30,7 @@
 				<li class="header__language-item active">
 					<a href="#">En</a>
 				</li>
-				<li class="header__language-item active">
+				<li class="header__language-item">
 					<a href="#">Ru</a>
 				</li>
 			</ul>
@@ -38,7 +39,11 @@
 </header>
 
 
+
 <section class="top">
+    <div class="top__image">
+        <img src="./img/image-bg.png" alt="">
+    </div>
     <div class="container">
         <div class="top__item">
             <h1 class="top__item-title">
@@ -62,8 +67,10 @@
     <a href="#">github</a>
 </section>
 <section class="info">
-    <div class="phrase-one">
-        <img src="./img/text-1.png" alt="">
+    <div class="info__phrase">
+        <div class="phrase-one">
+            <img src="./img/text-1.png" alt="">
+        </div>
     </div>
     <div class="container">
         <div class="info__item">
@@ -101,13 +108,14 @@
             </div>
         </div>
     </div>
+
+</section>
+<section class="works">
     <div class="phrase-two">
         <img src="./img/text-2.png" alt="">
     </div>
-</section>
-<section class="works">
     <div class="container">
-        <div class="works__wrapper">
+        <div class="works__wrapper first">
             <div class="works__item">
                 <h3 class="works__item-title">
                     EasyGov
@@ -122,16 +130,16 @@
                     aliquip
                     ex ea commodo consequat.
                 </p>
-                <div class="top__item-btn works">
+                <div class="top__item-btn works-btn">
                     <a href="#">watch project</a>
                     <img src="./img/arrow-right.png" alt="">
                     <span></span>
                 </div>
             </div>
-            <img src="./img/easy-gov-1.png" alt="">
+            <img class="works__wrapper-first-image" src="./img/easy-gov-1.png" alt="">
         </div>
         <div class="works__wrapper second">
-            <img src="./img/easy-gov-2.png" alt="">
+            <img class="works__wrapper-second-image" src="./img/easy-gov-2.png" alt="">
             <div class="works__item second">
                 <h3 class="works__item-title">
                     EasyGov
@@ -146,7 +154,7 @@
                     aliquip
                     ex ea commodo consequat.
                 </p>
-                <div class="top__item-btn works">
+                <div class="top__item-btn works-btn">
                     <a href="#">watch project</a>
                     <img src="./img/arrow-right.png" alt="">
                     <span></span>
@@ -168,39 +176,41 @@
                     aliquip
                     ex ea commodo consequat.
                 </p>
-                <div class="top__item-btn works">
+                <div class="top__item-btn works-btn">
                     <a href="#">watch project</a>
                     <img src="./img/arrow-right.png" alt="">
                     <span></span>
                 </div>
             </div>
-            <img src="./img/easy-gov-3.png" alt="">
+            <img class="works__wrapper-third-image" src="./img/easy-gov-3.png" alt="">
         </div>
     </div>
 </section>
 <section class="technology">
+    <div class="phrase-three">
+        <img src="./img/text-3.png" alt="">
+    </div>
     <div class="container">
-        <div class="phrase-three">
-            <img src="./img/text-3.png" alt="">
-        </div>
         <div class="technology__wrapper">
             <div class="technology__item">
-                <h2 class="technology__item-title">
+                <h2 class="technology__item-title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.8s">
                     Data and operations
                 </h2>
                 <div class="technology__item-box__wrap">
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="0.8s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/aws.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/aws-figure.png" alt="">
                         <p class="technology__item-box-title">
                             aws
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/gcp.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/gcp-figure.png" alt="">
                         <p class="technology__item-box-title">
                             gcp
                         </p>
@@ -218,38 +228,42 @@
 
 
             <div class="technology__item">
-                <h2 class="technology__item-title">
+                <h2 class="technology__item-title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.8s">
                     PHP to Java
                 </h2>
                 <div class="technology__item-box__wrap">
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="0.8s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/php.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/php-figure.png" alt="">
                         <p class="technology__item-box-title">
                             php
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/python.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/python-figure.png" alt="">
                         <p class="technology__item-box-title">
                             python
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="2.2s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/ruby.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/ruby-figure.png" alt="">
                         <p class="technology__item-box-title">
                             ruby
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="2.9s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/java.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/java-figure.png" alt="">
                         <p class="technology__item-box-title">
                             java
                         </p>
@@ -264,30 +278,33 @@
             </div>
 
             <div class="technology__item">
-                <h2 class="technology__item-title">
+                <h2 class="technology__item-title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.8s">
                     Lightning-fast development
                 </h2>
                 <div class="technology__item-box__wrap">
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="0.8s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/vue.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/vue-figure.png" alt="">
                         <p class="technology__item-box-title">
                             vue
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/nuxt.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/nuxt-figure.png" alt="">
                         <p class="technology__item-box-title">
                             nuxt
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="2.2s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/js.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/js-figure.png" alt="">
                         <p class="technology__item-box-title">
                             javascript
                         </p>
@@ -303,22 +320,24 @@
             </div>
 
             <div class="technology__item">
-                <h2 class="technology__item-title">
+                <h2 class="technology__item-title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.8s">
                     Mobile apps
                 </h2>
                 <div class="technology__item-box__wrap">
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="0.8s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/ios.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/ios-figure.png" alt="">
                         <p class="technology__item-box-title">
                             ios
                         </p>
                     </div>
-                    <div class="technology__item-box">
-                        <div class="technology__item-box__figure">
+                    <div class="technology__item-box wow fadeIn" data-wow-duration="3s" data-wow-delay="1.5s">
+                        <!-- <div class="technology__item-box__figure">
                             <img src="./img/android.png" alt="">
-                        </div>
+                        </div> -->
+                        <img src="./img/android-figure.png" alt="">
                         <p class="technology__item-box-title">
                             android
                         </p>
@@ -338,7 +357,7 @@
             </div>
 
             <div class="technology__item">
-                <h2 class="technology__item-title">
+                <h2 class="technology__item-title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.8s">
                     DevOps Principles
                 </h2>
 
@@ -353,80 +372,76 @@
         </div>
     </div>
 </section>
-<section class="work">
-    <div class="phrase-fourth">
+<section class="stages">
+    <div class="phrase-four">
         <img src="./img/text-4.png" alt="">
     </div>
     <div class="container">
-        <div class="work__item">
-            <div class="work__item-block">
-                <div class="work__item-block__number">
-                    <img src="./img/one.png" alt="">
-                </div>
+        <div class="stages__item">
+            <div class="stages__item-block">
+                <img class="stages__item-block-circle" src="./img/circle.png" alt="">
+                <img class="stages__item-block-number" src="./img/one.png" alt="">
 
-                <div class="work__item-block__info one">
-                    <h3 class="work__item-block__info-title">
+                <div class="stages__item-block__info one">
+                    <h3 class="stages__item-block__info-title">
                         Minimum Valiable Product
                     </h3>
-                    <p class="work__item-block__info-text">
+                    <p class="stages__item-block__info-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua.
                     </p>
                 </div>
             </div>
-            <div class="work__arrow">
+            <div class="stages__arrow one">
                 <img src="./img/arrow-right-2.png" alt="">
             </div>
-            <div class="work__item-block">
-                <div class="work__item-block__number">
-                    <img src="./img/two.png" alt="">
-                </div>
+            <div class="stages__item-block">
+                <img class="stages__item-block-circle" src="./img/circle-2.png" alt="">
+                <img class="stages__item-block-number" src="./img/two.png" alt="">
 
-                <div class="work__item-block__info two">
-                    <h3 class="work__item-block__info-title">
+                <div class="stages__item-block__info two">
+                    <h3 class="stages__item-block__info-title">
                         Validate / Iterate
                         (or pivot)
                     </h3>
-                    <p class="work__item-block__info-text">
+                    <p class="stages__item-block__info-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua.
                     </p>
                 </div>
             </div>
-            <div class="work__arrow">
+            <div class="stages__arrow two">
                 <img src="./img/arrow-right-2.png" alt="">
             </div>
-            <div class="work__item-block">
-                <div class="work__item-block__number">
-                    <img src="./img/three.png" alt="">
-                </div>
+            <div class="stages__item-block">
+                <img class="stages__item-block-circle" src="./img/circle-3.png" alt="">
+                <img class="stages__item-block-number" src="./img/three.png" alt="">
 
-                <div class="work__item-block__info three">
-                    <h3 class="work__item-block__info-title">
+                <div class="stages__item-block__info three">
+                    <h3 class="stages__item-block__info-title">
                         Scale Up
                     </h3>
-                    <p class="work__item-block__info-text">
+                    <p class="stages__item-block__info-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua.
                     </p>
                 </div>
             </div>
-            <div class="work__arrow">
+            <div class="stages__arrow three">
                 <img src="./img/arrow-right-2.png" alt="">
             </div>
-            <div class="work__item-block">
-                <div class="work__item-block__number">
-                    <img src="./img/four.png" alt="">
-                </div>
+            <div class="stages__item-block">
+                <img class="stages__item-block-circle" src="./img/circle-2.png" alt="">
+                <img class="stages__item-block-number" src="./img/four.png" alt="">
 
-                <div class="work__item-block__info four">
-                    <h3 class="work__item-block__info-title">
+                <div class="stages__item-block__info four">
+                    <h3 class="stages__item-block__info-title">
                         Grow, Scale, Improve your solution
                     </h3>
-                    <p class="work__item-block__info-text">
+                    <p class="stages__item-block__info-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                     </p>
                 </div>
@@ -434,7 +449,43 @@
         </div>
     </div>
 </section>
-
+<section class="clients">
+    <div class="phrase-five">
+        <img src="./img/text-5.png" alt="">
+    </div>
+    <div class="clients__block">
+        <div class="clients__block-item">
+            <img src="./img/logo-intel.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-amd.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-ms.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-ibm.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-nike.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-intel.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-amd.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-ms.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-ibm.png" alt="">
+        </div>
+        <div class="clients__block-item">
+            <img src="./img/logo-nike.png" alt="">
+        </div>
+    </div>
+</section>
 
 <footer class="footer">
     <div class="container">
@@ -455,8 +506,99 @@
             </form>
         </div>
     </div>
-
+    <div class="footer__bottom">
+        © 2021, extenso.io
+    </div>
 </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
+<script src="js/my.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+<div class="modal">
+    <button class="modal__close"></button>
+    <div class="modal__block">
+        <h2 class="modal__title">easygov</h2>
+        <div class="modal__item">
+            <a class="modal__item-link" href="#">www.easygov.com.ua</a>
+            <p class="modal__item-client"><span>Client:</span> clientnam</p>
+            <p class="modal__item-text"><span>Task:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <img class="modal__block-image" src="./img/modal-image.png" alt="">
+        <p class="modal__info">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est
+            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+            totam
+            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+            explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+            aliquam
+            quaerat voluptatem.
+        </p>
+        <div class="modal__details-wrapper">
+            <div class="modal__details">
+                <div class="modal__details-image">
+                    <img src="./img/modal-image-1.png" alt="">
+                </div>
+                <div class="modal__details-image">
+                    <img src="./img/modal-image-2.png" alt="">
+                </div>
+                <div class="modal__details-image">
+                    <img src="./img/modal-image-3.png" alt="">
+                </div>
+                <div class="modal__details-image">
+                    <img src="./img/modal-image-4.png" alt="">
+                </div>
+                <div class="modal__details-image">
+                    <img src="./img/modal-image-5.png" alt="">
+                </div>
+                <div class="modal__details-image">
+                    <img src="./img/modal-image-6.png" alt="">
+                </div>
+
+                <!-- <img src="./img/modal-image-2.png" alt="">
+            <img src="./img/modal-image-3.png" alt="">
+            <img src="./img/modal-image-4.png" alt="">
+            <img src="./img/modal-image-5.png" alt="">
+            <img src="./img/modal-image-6.png" alt=""> -->
+            </div>
+        </div>
+        <div class="modal__buttons">
+            <div class="modal__buttons-prev">
+                <div class="modal__buttons-prev-item">
+                    <span></span>
+                    <img src="./img/arrow-prev-modal.png" alt="">
+                    <a href="#">prev project</a>
+                </div>
+            </div>
+            <div class="modal__buttons-next">
+                <div class="modal__buttons-next-item">
+                    <a href="#">next project</a>
+                    <img src="./img/arrow-next-modal.png" alt="">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 

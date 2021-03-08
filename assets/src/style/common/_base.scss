@@ -8,14 +8,30 @@ body{
     background-color: #010119;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
+    // overflow-x: hidden;
+    position: relative;
+    // min-width: 320px;
+    // overflow-x: hidden;
+   
     
 }
 
 .container{
     max-width: 1248px;
     width: 100%;
-    padding: 0 12px;
+    padding: 0 30px;
     margin: 0 auto;
+    @media (max-width: 767px){
+        padding: 0 16px;
+    }
+    &.technology{
+        @media(max-width: 1439px){
+            padding: 0 100px;
+        }
+        @media (max-width: 767px){
+            padding: 0 16px;
+        }
+    }
 }
 
 h1{
