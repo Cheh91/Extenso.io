@@ -1,5 +1,6 @@
 'use strict';
 
+const btn = document.firstElementChild
 
 jQuery(document).ready(function () {
 
@@ -18,7 +19,9 @@ function languageHeader(){
 }
 
 function scrollFunction() {
-  // $(window).resize(function () {
+
+  
+  
     // if ($(window).width() >= 1440) {
       $(document).on("scroll", function () {
         $(".phrase-one").css("left", Math.max(340 - 1 * window.scrollY) + "px");

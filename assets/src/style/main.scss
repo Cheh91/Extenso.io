@@ -49,6 +49,7 @@
     position: relative;
     padding-top: 240px;
     overflow-x: hidden;
+    padding-bottom: 200px;
     @media (max-width: 1439px){
         padding-top: 120px;
     }
@@ -190,19 +191,19 @@
 }
 
 .phrase-one{
-    top: 430px;
+    top: 232px;
     @media (max-width: 1439px){
-        top: 320px;
+        top: 307px;
     }
     @media (max-width: 767px){
-        top: 230px;
+        top: 50px;
     }
     img{
         @media (max-width: 1439px){
             height: 63px;
         }
         @media (max-width: 767px){
-            height: 37px;
+            height: 50px;
         }
     }
 }
@@ -211,12 +212,12 @@
     &__phrase{
         overflow-x: hidden;
         position: relative;
-        padding-top: 690px;
+        padding-top: 490px;
         @media (max-width: 1439px){
             padding-top: 550px;
         }
         @media (max-width: 767px){
-            padding-top: 350px;
+            padding-top: 150px;
         }
     }
     &__item{
@@ -1212,4 +1213,3 @@ footer{
         }
     }
 }
-
