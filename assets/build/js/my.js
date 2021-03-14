@@ -4,8 +4,8 @@ jQuery(function () {
 
   languageHeader();
   scrollFunction();
-  openModalProject();
-  openModalStart();
+  // openModalProject();
+  // openModalStart();
   typingText(); 
   
 });
@@ -54,26 +54,29 @@ function scrollFunction() {
 
       $(".phrase-one").css("left", Math.max(340 - 1 * window.scrollY) + "px");
       $(".phrase-two").css("left", Math.max(1500 - 1 * window.scrollY) + "px");
-      $(".phrase-three").css("left", Math.max(3600 - 1 * window.scrollY) + "px");
-      $(".phrase-four").css("left", Math.max(5400 - 1 * window.scrollY) + "px");
-      $(".phrase-five").css("left", Math.max(6500 - 1 * window.scrollY) + "px");
-      $(".clients__block").css("right", Math.max(6700 - 1 * window.scrollY) + "px");
+      $(".phrase-three").css("left", Math.max(1600 - 1 * window.scrollY) + "px");
+      $(".phrase-four").css("left", Math.max(2900 - 1 * window.scrollY) + "px");
+      $(".phrase-five").css("left", Math.max(5200 - 1 * window.scrollY) + "px");
+      $(".phrase-six").css("left", Math.max(4300 - 1 * window.scrollY) + "px");
+      $(".clients__block").css("right", Math.max(5500 - 1 * window.scrollY) + "px");
     } else if ($(window).width() > 768 && $(window).width() < 1279) {
      
       $(".phrase-one").css("left", Math.max(150 - 0.5 * window.scrollY) + "px")
       $(".phrase-two").css("left", Math.max(800 - 0.5 * window.scrollY) + "px");
-      $(".phrase-three").css("left", Math.max(2000 - 0.7 * window.scrollY) + "px");
-      $(".phrase-four").css("left", Math.max(3300 - 0.7 * window.scrollY) + "px");
-      $(".phrase-five").css("left", Math.max(6200 - 1 * window.scrollY) + "px");
-      $(".clients__block").css("right", Math.max(6300 - 1 * window.scrollY) + "px");
+      $(".phrase-three").css("left", Math.max(1000 - 0.7 * window.scrollY) + "px");
+      $(".phrase-four").css("left", Math.max(2500 - 0.7 * window.scrollY) + "px");
+      $(".phrase-five").css("left", Math.max(5900 - 1 * window.scrollY) + "px");
+      $(".phrase-six").css("left", Math.max(5300 - 1 * window.scrollY) + "px");
+      $(".clients__block").css("right", Math.max(5900 - 1 * window.scrollY) + "px");
     } else if ($(window).width() < 768) {
     
       $(".phrase-one").css("left", Math.max(50 - 0.7 * window.scrollY) + "px");
       $(".phrase-two").css("left", Math.max(550 - 0.5 * window.scrollY) + "px");
-      $(".phrase-three").css("left", Math.max(2100 - 0.7 * window.scrollY) + "px");
-      $(".phrase-four").css("left", Math.max(4400 - 0.9 * window.scrollY) + "px");
-      $(".phrase-five").css("left", Math.max(8500 - 1.2 * window.scrollY) + "px");
-      $(".clients__block").css("right", Math.max(8300 - 1.2 * window.scrollY) + "px");
+      $(".phrase-three").css("left", Math.max(700 - 0.7 * window.scrollY) + "px");
+      $(".phrase-four").css("left", Math.max(2900 - 0.9 * window.scrollY) + "px");
+      $(".phrase-five").css("left", Math.max(7700 - 1.2 * window.scrollY) + "px");
+      $(".phrase-six").css("left", Math.max(5100 - 1 * window.scrollY) + "px");
+      $(".clients__block").css("right", Math.max(7600 - 1.2 * window.scrollY) + "px");
     }
   })
 
