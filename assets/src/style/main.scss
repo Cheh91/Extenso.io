@@ -1,10 +1,6 @@
 
 
 @import "utils/normalize";
-@import "utils/variables";
-@import "utils/icomoon";
-@import "fonts";
-
 
 
 @import "common/header";
@@ -35,7 +31,6 @@
             height: 375px;
         }
     }
-    
 }
 
 .top{
@@ -104,7 +99,7 @@
             align-items: center;
             margin-top: 35px;
             position: relative;
-            width: 146px;
+            width: 149px;
             cursor: pointer;
             @media (max-width: 1279px){
                 margin-top: 25px;
@@ -129,7 +124,7 @@
                 display: inline;
                 margin-left: -17px;
                 position: absolute;
-                top: 0;
+                top: 1px;
                 right: 0;
                 transition: all .4s;
             }
@@ -139,21 +134,20 @@
                     height: 52px;
                     border-radius: 50%;
                     border: 1px solid #019BE0;
-                    top: -13px;
-                    right: -13px;
-                   
-
+                    top: -12px;
+                    right: -12px;
                 }
             }
             &.works-btn{
-                width: 155px;
+                width: 159px;
             }
             &.footer-btn{
                 margin-left: auto;
                 margin-top: 10px;
+                width: 150px;
             }
             &.send{
-                width: 93px;
+                width: 96px;
                 margin-left: auto;
                 margin-top: 55px;
                 span{
@@ -226,7 +220,7 @@
             height: 63px;
         }
         @media (max-width: 767px){
-            height: 50px;
+            height: 37px;
         }
     }
 }
@@ -1275,6 +1269,13 @@
     display: none;
     padding-left: 10px;
     padding-right: 10px;
+    // padding-top: 17%;
+    padding-top: 140px;
+    padding-bottom: 80px;
+    @media (max-width: 1279px){
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
     &.active{
         display: block;
     }
@@ -1289,7 +1290,7 @@
         padding-right: 20px;
         margin-bottom: 20px;
         margin: 0 auto;
-        top: 17%;
+        // top: 17%;
         &:before{
             position: absolute;
             content: url("../img/modal-start-bg.svg");
